@@ -1,4 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # add this import
+
+app = Flask(__name__)
+CORS(app)  # enable CORS for your app
+
+from flask import Flask, request, jsonify
 import joblib
 import numpy as np
 
